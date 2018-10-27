@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/foto"
+        android:src="@drawable/placeholder_camera_green"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"/>
+
+
+    <TextView
+        android:id="@+id/txtNamaKreditor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAlamat"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtAlamat"
+        android:text="TextView"
+        android:maxLines="1"
+        android:lines="1"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNamaKreditor"
+        android:layout_toRightOf="@id/foto"
+        android:text="TextView"
+        android:maxLines="1"
+        android:lines="1"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/txtNamaSales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAlamat"
+        android:layout_toRightOf="@id/foto"
+        android:text="TextView"
+        android:maxLines="1"
+        android:lines="1"
+        android:layout_marginLeft="20dp" />
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+            <TextView
+                android:text="Dokumen"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imgDoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/imgDoc"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:tint="#898989"
+                android:src="@drawable/ic_document"/>
+            <ImageView
+                android:id="@+id/checkDocument"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_check_circle_black_24dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:visibility="gone"
+                android:tint="#01ac1b"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+            <TextView
+                android:text="Siap Survey"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imgSurvey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/imgSurvey"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:tint="#898989"
+                android:src="@drawable/ic_document"/>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/checkSurvey"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_check_circle_black_24dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:tint="#01ac1b"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

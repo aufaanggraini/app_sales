@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorFinished">#007128</color>
+    <color name="colorFailed">#940000</color>
+    <color name="colorUNFinished">#0e0e0e</color>
+
+    <color name="color_new">#c1c1c1</color>
+    <color name="color_wip">#9fa9d9</color>
+    <color name="color_succes">#73d970</color>
+    <color name="color_fail">#ec9090</color>
+</resources>
